@@ -12,7 +12,7 @@
 
 ## demo
 
-- [demo](http://waiting-business.surge.sh/)
+- [demo](http://familiar-harbor.surge.sh/)
 
 [build-badge]: https://img.shields.io/travis/dearfrankg/tic-tac-toe-component/master.png?style=flat-square
 [build]: https://travis-ci.org/dearfrankg/tic-tac-toe-component
