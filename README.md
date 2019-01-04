@@ -6,6 +6,10 @@
 
 > A tic tac toe component
 
+## install
+
+- `npm install @cogent-labs/tic-tac-toe-component`
+
 ## demo
 
 - [demo](http://waiting-business.surge.sh/)

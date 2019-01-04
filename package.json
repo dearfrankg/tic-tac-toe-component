@@ -1,15 +1,23 @@
 {
-  "name": "tic-tac-toe-component",
+  "name": "@cogent-labs/tic-tac-toe-component",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.7.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dearfrankg/tic-tac-toe-component"
+  },
+  "peerDependencies": {
     "react-dom": "^16.7.0",
     "react-scripts": "2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "NODE_ENV=production && rm -rf dist && mkdir dist && npx babel src/components/Game --out-dir dist --copy-files",
+    "build": "rm -rf dist && NODE_ENV=production babel src/components --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "build:demo": "react-scripts build",
     "test": "react-scripts test",
     "test:coverage": "npm run test -- --coverage",
@@ -28,6 +36,9 @@
     "@babel/cli": "^7.2.3",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-scripts": "2.1.2",
     "react-test-renderer": "^16.7.0"
   },
   "babel": {
