@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "NODE_ENV=production && rm -rf dist && mkdir dist && npx babel src/components/Game --out-dir dist --copy-files",
+    "build:demo": "react-scripts build",
     "test": "react-scripts test",
     "test:coverage": "npm run test -- --coverage",
     "eject": "react-scripts eject"
@@ -24,8 +25,15 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "react-test-renderer": "^16.7.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/react",
+      "@babel/env"
+    ]
   }
 }
